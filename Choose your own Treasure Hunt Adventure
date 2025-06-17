@@ -20,12 +20,12 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 Welcome to Treasure Island: Choose your own Adventure.''')
 
-answer1 = input('Would you like to sail the seven seas or stay in England? Type sail or stay.\n')
+answer1 = input('Would you like to sail the seven seas or stay in England? Type sail or stay.\n').lower()
 
 if answer1 == 'sail':
-    answer2 = input ('Great! Let us sail the seven seas. You face a sea witch, do you want to fight or run? Type fight or run.\n')
+    answer2 = input ('Great! Let us sail the seven seas. You face a sea witch, do you want to fight or run? Type fight or run.\n').lower()
     if answer2== 'run':
-        answer3= input ('Ok, you narrowly escaped but you are safe now.  You see an island. Will you anchor and go to the island or deep sea dive or stay on the ship. Type island, dive or stay.\n')
+        answer3= input ('Ok, you narrowly escaped but you are safe now.  You see an island. Will you anchor and go to the island or deep sea dive or stay on the ship. Type island, dive or stay.\n').lower()
         if answer3 =='island':
             print('You found the treasure!')
         elif answer3== 'dive':
