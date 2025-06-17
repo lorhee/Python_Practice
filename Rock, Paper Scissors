@@ -1,0 +1,15 @@
+import random
+
+game_choices =["rock", "paper", "scissors"]
+
+user_choice = input("What do you choose rock, paper, scissors? (r, p, s)\n").lower()
+
+computer_choice=random.choice(game_choices)
+
+
+if (user_choice == "r" and computer_choice == game_choices[0]) or (user_choice == "p" and computer_choice == game_choices[1]) or (user_choice == "s" and computer_choice == game_choices[2]):
+    print(f"Computer chose {computer_choice}. It is a tie.")
+elif (user_choice == "r" and computer_choice == game_choices[2]) or (user_choice == "p" and computer_choice == game_choices[0]) or (user_choice == "s" and computer_choice == game_choices[1]):
+    print(f"Computer chose {computer_choice}. You win.")
+else:
+    print(f"Computer chose {computer_choice}. You lose.")
